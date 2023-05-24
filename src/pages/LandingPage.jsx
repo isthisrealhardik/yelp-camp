@@ -56,7 +56,7 @@ const LandingPage = () => {
             {/* DESKTOP */}
             <div className='hidden lg:flex justify-center items-center'>
                 {/* left */}
-                <div className='bg-primary h-screen w-[55%] px-16 pt-3'>
+                <div className='bg-primary h-screen w-[55%] px-16 pt-3 flex flex-col justify-center'>
                     {/* Nav */}
                     <div className='px-6 py-6'>
                         <img src={Logo} alt="Logo" className='w-24' />
