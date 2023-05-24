@@ -30,7 +30,7 @@ const LandingPage = () => {
                 </div>
                 {/* Hero Image */}
                 <div className='h-80'>
-                    <img src={HeroImageResponsive} alt="Hero" className='h-80 w-96 object-cover' />
+                    <img src={HeroImageResponsive} alt="Hero" className='h-80 w-screen object-cover' />
                 </div>
                 {/* Hero Text and Buttons */}
                 <div className='flex flex-col justify-start items-start px-6 py-8'>
