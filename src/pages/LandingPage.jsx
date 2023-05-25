@@ -6,6 +6,7 @@ import airbnb from "../../Assets/Airbnb.svg"
 import booking from "../../Assets/Booking.svg"
 import plumGuide from "../../Assets/Plum Guide.svg"
 import HeroImage from "../../Assets/Hero Image.jpg"
+import { Link } from 'react-router-dom'
 
 const checkmarks = [
     'Add your own camp suggestions',
@@ -44,7 +45,10 @@ const LandingPage = () => {
                             </div>
                         ))}
                     </div>
-                    <button className='rounded-md my-2 text-primary bg-secondary h-14 text-base hover:bg-transparent hover:text-secondary hover:border hover:border-secondary transition-all'>View Campgrounds</button>
+                    {/* <Link to="/search" className='' >View Campgrounds</Link> */}
+                    <button className='rounded-md my-2 text-primary bg-secondary h-14 text-base hover:bg-transparent hover:text-secondary hover:border hover:border-secondary transition-all'>
+                        <Link to='/search' className='text-primary' >View Campgrounds</Link>
+                    </button>
                     <h1 className='mt-4 mb-2 opacity-60 text-base font-bold'>Partnered with</h1>
                     <div className='flex justify-around items-center'>
                         {logos.map(image => (
@@ -73,7 +77,10 @@ const LandingPage = () => {
                                 </div>
                             ))}
                         </div>
-                        <button className='rounded-md my-2 text-primary bg-secondary h-12 text-sm hover:bg-transparent hover:text-secondary hover:border hover:border-secondary transition-all'>View Campgrounds</button>
+                        {/* <button className='rounded-md my-2 text-primary bg-secondary h-12 text-sm hover:bg-transparent hover:text-secondary hover:border hover:border-secondary transition-all'>View Campgrounds</button> */}
+                        <button className='rounded-md my-2 text-primary bg-secondary h-14 text-base hover:bg-transparent hover:text-secondary hover:border hover:border-secondary transition-all'>
+                            <Link to='/search' className='text-primary hover:text-secondary' >View Campgrounds</Link>
+                        </button>
                         <h1 className='mt-4 mb-2 opacity-60 text-base font-bold'>Partnered with</h1>
                         <div className='flex justify-around items-center space-x-4'>
                             {logos.map(image => (
