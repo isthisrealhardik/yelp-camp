@@ -30,7 +30,7 @@ function Campground() {
         {/* Info */}
         <Info />
         {/* Comment */}
-        <div className='bg-white border px-8 py-4 border-secondary text-secondary my-4 border-opacity-20 w-[80%] rounded flex flex-col justify-center items-start'>
+        <div className='bg-white border px-8 py-4 border-secondary text-secondary my-4 border-opacity-20 w-[80%] lg:w-[40%] rounded flex flex-col justify-center items-start'>
           {reviews.map(obj => (
             <Comment name={obj.name} time={obj.time} review={obj.review} />
           ))}
