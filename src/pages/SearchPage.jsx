@@ -62,11 +62,20 @@ function SearchPage() {
   return (
     <div className='bg-white h-full w-screen flex flex-col justify-start items-center'>
         {/* Nav */}
-        <div className='flex justify-between items-center px-6 py-8 w-screen'>
-            <img src={Logo} alt="Logo" />
-            <div onClick={handleClick} id='menu' className='bg-primary h-8 w-8 flex justify-center items-center'>
+        <div className='flex justify-between items-center px-6 py-8 w-screen lg:px-32'>
+            <div className='flex justify-center items-center space-x-3'>
+                <img src={Logo} alt="Logo" className='lg:w-32'/>
+                <button className=' text-secondary bg-transparent text-sm hover:opacity-50 transition-all hidden lg:block' >Home</button>
+            </div>
+            <div onClick={handleClick} id='menu' className='lg:hidden bg-primary h-8 w-8 flex justify-center items-center'>
                 <img src={Menu} alt="Menu" />
             </div>
+            <div className='hidden lg:flex justify-center items-center space-x-3'>
+                <button className=' text-secondary bg-transparent text-sm hover:opacity-50 transition-all' >Login</button>
+                <button className='rounded-md my-2 text-primary bg-secondary h-12 text-sm hover:bg-transparent hover:text-secondary hover:border hover:border-secondary transition-all font-bold' >Create an account</button>
+            </div>
+
+            {/* dropdown */}
             <div id='dropdown' className='absolute hidden flex-col justify-center items-start px-4 py-4 bg-primary w-[50%] rounded rounded-tr-none shadow-sm top-16 left-[10.2rem]'>
                 <img src={Close} alt="Close" className='relative left-60 w-4 hidden' />
                 <button className=' text-secondary bg-transparent text-sm hover:opacity-50 transition-all' >Home</button>
@@ -75,17 +84,17 @@ function SearchPage() {
             </div>
         </div>
         {/* Search Component */}
-        <div className='flex flex-col justify-center items-center'>
+        <div className='flex flex-col justify-center items-center lg:w-full lg:px-32'>
             <Search />
         </div>
         {/* Cards */}
-        <div className='my-4 flex flex-col justify-center items-center'>
+        <div className='my-4 flex flex-col justify-center items-center lg:flex-row lg:px-32 lg:justify-between lg:my-8 lg:flex-wrap'>
             {cards.map(obj => (
                 <Card image={obj.img} heading={obj.heading} paragraph={obj.paragraph} />
             ))}
         </div>
         {/* Footer */}
-        <div className='flex justify-start items-start w-full px-6 mt-2 mb-8'>
+        <div className='flex justify-start items-start w-full px-6 lg:px-32 mt-2 mb-8'>
             <img src={Logo} alt="Logo" />
         </div>
     </div>
