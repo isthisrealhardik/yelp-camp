@@ -13,33 +13,45 @@ import Footer from '../components/Footer'
 const cards = [
     {
         img: image1,
-        heading: 'Mount Ulap',
+        name: 'Mount Ulap',
         paragraph: 'One of the most famous hikes in Benguet is Mt Ulap in Itogon',
+        id: 1,
+        price: 103.55,
     },
     {
         img: image2,
-        heading: 'Calaguas Islands',
+        name: 'Calaguas Islands',
         paragraph: 'A paradise of islands that can rival the white sand beauty of Boracay',
+        id: 2,
+        price: 89.45,
     },
     {
         img: image3,
-        heading: 'Onay Beach',
+        name: 'Onay Beach',
         paragraph: 'This is one of the best beach camping sites, beautiful and pristine',
+        id: 3,
+        price: 42.54,
     },
     {
         img: image4,
-        heading: 'Seven Sisters Waterfall',
+        name: 'Seven Sisters Waterfall',
         paragraph: 'The Seven Sisters is the 39th tallest waterfall in Norway',
+        id: 4,
+        price: 335.65,
     },
     {
         img: image5,
-        heading: 'Latik Riverside',
+        name: 'Latik Riverside',
         paragraph: 'Phillipines is one of the most dazzling countries in all of Asia',
+        id: 5,
+        price: 35.57,
     },
     {
         img: image6,
-        heading: 'Buloy Springs',
+        name: 'Buloy Springs',
         paragraph: 'This is one of the best beach camping sites, beautiful and pristine',
+        id: 6,
+        price: 42.36,
     }
 ]
 
@@ -56,7 +68,7 @@ function SearchPage() {
         {/* Cards */}
         <div className='my-4 flex flex-col justify-center items-center lg:flex-row lg:px-32 lg:justify-between lg:my-8 lg:flex-wrap'>
             {cards.map(obj => (
-                <Card image={obj.img} heading={obj.heading} paragraph={obj.paragraph} />
+                <Card image={obj.img} name={obj.name} paragraph={obj.paragraph} id={obj.id} price={obj.price} />
             ))}
         </div>
         {/* Footer */}
