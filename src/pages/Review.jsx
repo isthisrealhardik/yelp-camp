@@ -5,7 +5,7 @@ import Footer from '../components/Footer'
 
 function Comment() {
   return (
-    <div className='bg-white h-full lg:flex lg:flex-col lg:justify-center lg:items-center'> 
+    <div className='bg-white h-screen lg:flex lg:flex-col lg:justify-center lg:items-center'> 
         <Nav />
         <div className='px-6 w-screen mb-8 lg:w-[500px]'>
           <h1 className='text-secondary font-bold text-3xl my-6'>Add New Comment</h1>

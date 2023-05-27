@@ -1,5 +1,6 @@
 import React from 'react'
 import SearchIcon from "../../Assets/Search Icon.svg";
+import { Link } from 'react-router-dom';
 
 function Search() {
   return (
@@ -9,9 +10,9 @@ function Search() {
         <div className='w-full flex flex-col lg:flex-row justify-start items-start space-y-3 my-4 lg:space-x-3 lg:space-y-0 lg:justify-start lg:items-center'>
             <input type="text" placeholder={`Search for camps`} className='h-14 rounded w-full lg:w-[50%] bg-white border border-secondary border-opacity-30 px-4' />
             <button className=' flex justify-center items-center rounded-md my-2 text-primary bg-secondary h-14 w-full lg:w-[25%] text-base hover:bg-transparent hover:text-secondary hover:border hover:border-secondary transition-all'>Search</button>
-            <p className='text-secondary opacity-70 hover:opacity-100 underline lg:hidden'>Or add your own campground</p>
+            <Link to="/new" className='text-secondary opacity-70 hover:opacity-100 underline lg:hidden'>Or add your own campground</Link>
         </div>
-        <p className='text-secondary opacity-70 hover:opacity-100 underline hidden lg:block'>Or add your own campground</p>
+        <Link to="/new" className='text-secondary opacity-70 hover:opacity-100 underline hidden lg:block'>Or add your own campground</Link>
     </div>
   )
 }

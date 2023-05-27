@@ -6,6 +6,7 @@ import Campground from './pages/Campground'
 import SignUp from './pages/SignUp'
 import Signin from './pages/Signin'
 import Review from "./pages/Review"
+import NewCampground from './pages/NewCampground'
 
 function App() {
   return (
@@ -18,6 +19,7 @@ function App() {
           <Route path='/signup' element={<SignUp />} />
           <Route path='/signin' element={<Signin />} />
           <Route path='/review' element={<Review />} />
+          <Route path='/new' element={<NewCampground />} />
         </Routes>
       </Router>
     </div>
