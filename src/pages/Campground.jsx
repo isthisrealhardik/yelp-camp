@@ -3,7 +3,7 @@ import Nav from '../components/Nav'
 import Info from '../components/Info'
 import Comment from '../components/Comment'
 import Footer from '../components/Footer'
-import { useLocation, useParams } from 'react-router-dom'
+import { Link, useLocation, useParams } from 'react-router-dom'
 import Map from './Map'
 
 const reviews = [
@@ -42,7 +42,9 @@ function Campground() {
           {reviews.map(obj => (
             <Comment name={obj.name} time={obj.time} review={obj.review} />
           ))}
-            <button className='rounded-md my-2 text-primary bg-secondary h-12 text-sm hover:bg-transparent hover:text-secondary hover:border hover:border-secondary transition-all font-bold' >Leave a review</button>
+            <button className='rounded-md my-2 text-primary bg-secondary h-12 text-sm hover:bg-transparent hover:text-secondary hover:border hover:border-secondary transition-all font-bold' >
+              <Link to="/review" className='text-primary' >Leave a review</Link>
+            </button>
         </div>
         {/* Map */}
         <Map />
