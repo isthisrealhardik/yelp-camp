@@ -49,7 +49,7 @@ function Nav() {
                 <Link to='/signin' className='text-secondary hover:text-secondary hover:opacity-70 hover:border-0'>Login</Link>
             </button>
             <button className='rounded-md my-2 text-primary bg-secondary h-12 text-xs hover:bg-transparent hover:text-secondary hover:border hover:border-secondary transition-all' >
-                <Link to='/signup' className='text-secondary hover:text-primary hover:opacity-70 hover:border-0'>Create an account</Link>
+                <Link to='/signup' className='text-primary hover:text-primary hover:opacity-70 hover:border-0'>Create an account</Link>
             </button>
         </div>
     </div>
