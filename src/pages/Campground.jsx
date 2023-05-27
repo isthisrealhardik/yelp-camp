@@ -4,6 +4,7 @@ import Info from '../components/Info'
 import Comment from '../components/Comment'
 import Footer from '../components/Footer'
 import { useLocation, useParams } from 'react-router-dom'
+import Map from './Map'
 
 const reviews = [
   {
@@ -43,6 +44,8 @@ function Campground() {
           ))}
             <button className='rounded-md my-2 text-primary bg-secondary h-12 text-sm hover:bg-transparent hover:text-secondary hover:border hover:border-secondary transition-all font-bold' >Leave a review</button>
         </div>
+        {/* Map */}
+        <Map />
         {/* Footer */}
           <Footer />
     </div>
